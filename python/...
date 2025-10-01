@@ -1,26 +1,37 @@
 def avaliar_curso():
     avaliacoes = []
 
-    print("=== Avaliação de Curso ===")
-    curso = input("Digite o nome do curso que deseja avaliar: ")
-    if curso.isalpha():
-        print()
+    print("=== Avalie seu Curso ===")
+    while True:
+        curso = input("\nDigite o nome do curso que deseja avaliar (máx. 30 caracteres): ")
+        if curso.isalpha() and len(curso) <= 30:
+            break
+        elif len(curso) > 30:
+            print("Nome do curso muito longo!")
+        else:
+            print("Digite apenas letras.")
 
     while True:
-        nota = int(input("Dê uma nota de 1 a 5: "))
-        comentario = input("Escreva um comentário: ")
+        try:
+            nota = int(input("Dê uma nota de 1 a 5: "))
+            if 1 <= nota <= 5:
+                break
+            else:
+                print("Digite um número entre 1 e 5.")
+        except ValueError:
+            print("Digite apenas números.")
 
-        avaliacao = {
-            "nota": nota,
-            "comentario": comentario
-        }
-        avaliacoes.append(avaliacao)
-
-        continuar = input("Deseja adicionar outra avaliação? (s/n): ").lower()
-        if continuar != 's':
+    while True:
+        comentario = input("Escreva um comentário (máx. 100 caracteres): ")
+        if len(comentario) <= 100:
             break
+        else:
+            print("Comentário muito longo!")
 
-    print(f"\n Avaliações do curso: {curso}")
+    avaliacao = {"nota": nota, "comentario": comentario}
+    avaliacoes.append(avaliacao)
+
+    print(f"\n=== Avaliações do curso: {curso} ===")
     soma_notas = 0
     for i, av in enumerate(avaliacoes, 1):
         print(f"\n--- Avaliação {i} ---")
@@ -30,8 +41,6 @@ def avaliar_curso():
 
     if avaliacoes:
         media = soma_notas / len(avaliacoes)
-        print(f"\n Nota média do curso: {media:.1f}/5")
+        print(f"\nNota média do curso: {media:.1f}/5")
 
-
-# Executar
 avaliar_curso()
