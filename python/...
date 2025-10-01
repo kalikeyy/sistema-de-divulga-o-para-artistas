@@ -1,0 +1,37 @@
+def avaliar_curso():
+    avaliacoes = []
+
+    print("=== Avaliação de Curso ===")
+    curso = input("Digite o nome do curso que deseja avaliar: ")
+    if curso.isalpha():
+        print()
+
+    while True:
+        nota = int(input("Dê uma nota de 1 a 5: "))
+        comentario = input("Escreva um comentário: ")
+
+        avaliacao = {
+            "nota": nota,
+            "comentario": comentario
+        }
+        avaliacoes.append(avaliacao)
+
+        continuar = input("Deseja adicionar outra avaliação? (s/n): ").lower()
+        if continuar != 's':
+            break
+
+    print(f"\n Avaliações do curso: {curso}")
+    soma_notas = 0
+    for i, av in enumerate(avaliacoes, 1):
+        print(f"\n--- Avaliação {i} ---")
+        print(f"Nota: {av['nota']}/5")
+        print(f"Comentário: {av['comentario']}")
+        soma_notas += av['nota']
+
+    if avaliacoes:
+        media = soma_notas / len(avaliacoes)
+        print(f"\n Nota média do curso: {media:.1f}/5")
+
+
+# Executar
+avaliar_curso()
