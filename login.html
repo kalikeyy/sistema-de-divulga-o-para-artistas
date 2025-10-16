@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divulgação e aprendizado de artista</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="cadastro-login.css">
+</head>
+<body>
+  <form class="formulario" onsubmit="location.href='inicio-aluno.html'; return false;">
+    <h2 class="titulo">Login</h2>
+
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Digite seu e-mail" 
+        maxlength="100" 
+        required>
+    </div>
+
+    <div class="campo">
+      <label for="senha">Senha</label>
+      <input 
+        type="password" 
+        id="senha" 
+        name="senha" 
+        placeholder="Digite sua senha" 
+        maxlength="20" 
+        required>
+    </div>
+
+    <button class="botao" type="submit">Entrar</button>
+  </form>
+
+</body>
+</html>

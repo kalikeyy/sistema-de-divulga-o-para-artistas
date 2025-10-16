@@ -1,0 +1,72 @@
+   body {
+      font-family: 'Georgia', serif;
+      background-color: #333336;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .certificado {
+      background-color: white;
+      width: 800px;
+      padding: 50px;
+      border: 10px solid #e0166a;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 0 20px rgba(0,0,0,0.3);
+    }
+
+    .certificado h1 {
+      font-size: 40px;
+      color: #e0166a;
+      margin-bottom: 10px;
+    }
+
+    .certificado h2 {
+      font-size: 24px;
+      margin: 20px 0;
+    }
+
+    .certificado p {
+      font-size: 18px;
+      margin: 10px 0;
+      line-height: 1.5;
+    }
+
+    .nome-aluno {
+      font-size: 30px;
+      font-weight: bold;
+      color: #2D283E;
+      margin: 20px 0;
+    }
+
+    .curso {
+      font-size: 24px;
+      font-weight: bold;
+      color: #e0166a;
+      margin: 10px 0;
+    }
+
+    .assinaturas {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 50px;
+      padding: 0 50px;
+    }
+
+    .assinatura {
+      text-align: center;
+    }
+
+    .assinatura p {
+      margin-top: 5px;
+      font-size: 16px;
+    }
+
+    .data {
+      margin-top: 30px;
+      font-size: 16px;
+      color: #555;
+    }

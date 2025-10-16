@@ -1,0 +1,125 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333336;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 30px;
+      padding: 30px 0;
+      width: 100%;
+    }
+
+    .curso-container {
+      display: flex;
+      background-color: #161616;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      overflow: hidden;
+      width: 1000px;
+      max-width: 95%;
+      min-height: 350px;
+    }
+
+    .curso-imagem {
+      flex: 1;
+    }
+
+    .curso-imagem img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .curso-info {
+      flex: 1;
+      padding: 25px;
+      background-color: #161616;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .curso-info h1 {
+      color: #e0166a;
+      margin-bottom: 10px;
+    }
+
+    .curso-info p {
+      margin: 6px 0;
+      font-size: 16px;
+    }
+
+    .curso-info button {
+      background-color: #e0166a;
+      color: white;
+      border: none;
+      padding: 12px;
+      border-radius: 8px;
+      margin-top: 15px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background 0.3s;
+      width: fit-content;
+    }
+
+    .curso-info button:hover {
+      background-color: #750e39;
+    }
+
+    .descricao, .avaliacao {
+      width: 1000px;
+      max-width: 95%;
+      background-color: #161616;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .descricao h2 {
+      color: #e0166a;
+      margin-bottom: 10px;
+    }
+
+    .avaliacao {
+      text-align: center;
+    }
+
+    .estrela {
+      font-size: 35px;
+      color: #ccc;
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .estrela.selecionada,
+    .estrela:hover,
+    .estrela:hover ~ .estrela {
+      color: #FFD700;
+    }
+
+.btn-matricula {
+  background-color: #e91e63;
+  color: white;
+  border: none;
+  padding: 8px 16px; 
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px; 
+  display: inline-block;
+  width: auto; 
+  transition: background-color 0.3s ease;
+}
+
+.btn-matricula:hover {
+  background-color: #c2185b;
+}

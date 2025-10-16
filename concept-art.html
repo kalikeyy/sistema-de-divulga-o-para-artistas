@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divulgação e aprendizado de artista</title>
+  <link rel="icon" type="image/x-icon" href="logo.png">
+  <link rel="stylesheet" href="menu.css">
+  <link rel="stylesheet" href="acessar-curso.css">
+</head>
+<body>
+
+  <nav>
+    <div class="nav-esquerda">
+      <a href="inicio.html" class="logo">
+        <img src="logo.png" alt="Logo">
+        ART
+      </a>
+
+      <div class="menu-botoes">
+        <a href="post.html">Post</a>
+        <a href="curso.html">Curso</a>
+      </div>
+    </div>
+
+    <div class="perfil-container">
+      <a href="perfil.html" class="perfil">
+        <img src="perfil.png" alt="Perfil">
+      </a>
+    </div>
+  </nav>
+
+  <main>
+    <section class="curso-container">
+      <div class="curso-imagem">
+        <img src="concept-art.jpg" alt="Curso de Concept Art">
+      </div>
+
+      <div class="curso-info">
+        <h1>Introdução à Concept Art</h1>
+        <p><strong>Nível:</strong> Intermediário</p>
+        <p><strong>Carga Horária:</strong> 40 horas</p>
+        <p><strong>Instrutor:</strong> Prof. Angelo Silva</p>
+       <a href="progresso.html" class="btn-matricula">concluido</a>
+          </div>
+      </section>
+
+    <section class="descricao">
+      <h2>Descrição do Curso</h2>
+      <p>Aprenda a criar conceitos visuais de personagens e cenários para jogos e animações.</p>
+    </section>
+
+    <section class="avaliacao">
+      <h3>Avalie este curso:</h3>
+      <div id="estrelas">
+        <span class="estrela" data-valor="1">★</span>
+        <span class="estrela" data-valor="2">★</span>
+        <span class="estrela" data-valor="3">★</span>
+        <span class="estrela" data-valor="4">★</span>
+        <span class="estrela" data-valor="5">★</span>
+      </div>
+      <p id="resultado"></p>
+    </section>
+  </main>
+  
+  <script>
+    const estrelas = document.querySelectorAll('.estrela');
+    const resultado = document.getElementById('resultado');
+
+    estrelas.forEach(estrela => {
+      estrela.addEventListener('click', () => {
+        const valor = estrela.getAttribute('data-valor');
+        estrelas.forEach(e => e.classList.remove('selecionada'));
+        for (let i = 0; i < valor; i++) {
+          estrelas[i].classList.add('selecionada');
+        }
+        resultado.textContent = `Você avaliou com ${valor} estrela${valor > 1 ? 's' : ''}!`;
+      });
+    });
+  </script>
+
+
+</body>
+</html>

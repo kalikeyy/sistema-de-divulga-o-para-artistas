@@ -1,0 +1,101 @@
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #333336;
+      color: #ffffff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+
+    main {
+      margin: 30px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 25px;
+      width: 100%;
+      padding-top: 100px;
+    }
+
+    .curso-progresso {
+      background-color: #161616;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      padding: 30px;
+      width: 1000px;
+      max-width: 95%;
+      color: white;
+    }
+
+    .curso-progresso h1 {
+      color: #e0166a;
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    .info {
+      font-size: 16px;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .notas {
+      background-color: #231f29;
+      padding: 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      color: white;
+    }
+
+    .notas h2 {
+      color: #ffffff;
+      margin-bottom: 10px;
+    }
+
+    .notas ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .notas li {
+      margin-bottom: 6px;
+    }
+
+    .progresso-container {
+      background-color: #ddd;
+      border-radius: 8px;
+      overflow: hidden;
+      height: 30px;
+      width: 100%;
+      margin-bottom: 15px;
+    }
+
+    .progresso-barra {
+      height: 100%;
+      width: 100%; 
+      background-color: #e0166a;
+      text-align: center;
+      color: white;
+      font-weight: bold;
+      line-height: 30px;
+      transition: width 0.5s;
+    }
+
+    .btn-certificado {
+    background-color: #e0166a;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-block;
+}
+
+.btn-certificado:hover {
+    background-color: #700d36;
+}

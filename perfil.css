@@ -1,0 +1,105 @@
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #333336;
+      margin: 0;
+      padding: 0;
+    }
+
+    main {
+      margin-top: 100px; 
+      padding: 20px;
+   }
+
+.usuario {
+  background-color: #161616;
+  width: 90%;
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0,0,0,0.2);
+  color: white;
+}
+
+.usuario img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.usuario h2 {
+  margin: 10px 0 5px 0;
+}
+
+.usuario p {
+  color: #cacaca;
+  margin: 3px 0;
+}
+
+
+    .editar {
+      display: inline-block;
+      background-color: #e0166a;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 6px;
+      text-decoration: none;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .editar:hover {
+      background-color: #880f42;
+    }
+
+    .portfolio {
+      background-color: #161616;
+      width: 90%;
+      max-width: 700px;
+      margin: 20px auto;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+
+    .portfolio h3 {
+      text-align: center;
+      color: #e0166a;
+    }
+
+    .pastas {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 15px;
+      color: white;
+    }
+
+    .pasta {
+      background-color: #161616;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      width: 180px;
+      padding: 10px;
+      text-align: center;
+      transition: background 0.2s;
+      color: white;
+    }
+
+    .pasta:hover {
+      background-color: #eee;
+    }
+
+    .pasta img {
+      width: 100%;
+      height: 100px;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+
+    .pasta p {
+      margin: 8px 0 0 0;
+      font-weight: bold;
+    }
